@@ -10,7 +10,8 @@ while True:
                 "You encounter a group of zombies, would you like to run or attack?")
 
             if answer == "attack":
-                print("That was a bad idea, you're all alone. Game over")
+                print(
+                    "That was a bad idea, you're all alone. The zombies surround you and kill you. GAME OVER")
             else:
                 print("Good choice, you ran away and escaped from the zombies")
 
@@ -19,10 +20,10 @@ while True:
 
                 if answer == "helicopter":
                     print(
-                        "Bad choice, you don't know how to fly a helicopter, you crash into the hill and blow up. Game over")
+                        "Bad choice, you don't know how to fly a helicopter, you crash into the hill and blow up. GAME OVER")
                 else:
                     print(
-                        "You drive away and find a safe place to rest. Congratulations, you have won the game")
+                        "You drive away and find a safe place to rest. Congratulations, YOU HAVE WON THE GAME")
 
         elif answer == "right":
             answer = input(
@@ -30,7 +31,7 @@ while True:
 
             if answer == "swim":
                 print(
-                    "You start swimming and almost make it when a big fish comes to the surface and eats you. Game over")
+                    "You start swimming and almost make it when a big fish comes to the surface and eats you. GAME OVER")
 
             else:
                 print("Good choice, you make it across the lake and find a cherry tree")
@@ -40,13 +41,13 @@ while True:
 
                 if answer == "yes":
                     print(
-                        "Oh no! The cherries have poisoned you. You die instantly. Game over")
+                        "Oh no! The cherries have poisoned you. You die instantly. GAME OVER")
                 else:
                     print(
-                        "Good choice, you have reached the escape point and have won the game")
+                        "Good choice, you have reached the escape point and have WON THE GAME")
 
         else:
-            print("Invalid choice, game over")
+            print("Invalid choice, GAME OVER")
 
     else:
         print("That's too bad, come back when you're ready to play")
