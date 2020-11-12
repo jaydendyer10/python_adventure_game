@@ -24,7 +24,24 @@ if answer .lower() .strip() == "yes":
                     "You drive away and find a safe place to rest. Congratulations, you have won the game")
 
     elif answer == "right":
-        print("You chose a dangerous path, you fall off a cliff and die. Game over")
+        answer = input(
+            "You go right and come across a little lake, would you like to swim across it or take a boat?")
+
+        if answer == "swim":
+            print("You start swimming and almost make it when a big fish comes to the surface and eats you. Game over")
+
+        else:
+            print("Good choice, you make it across the lake and find a cherry tree")
+
+            answer = input(
+                "Would you like to eat some cherries?")
+
+            if answer == "yes":
+                print(
+                    "Oh no! The cherries have poisoned you. You die instantly. Game over")
+            else:
+                print(
+                    "Good choice, you have reached the escape point and have won the game")
 
     else:
         print("Invalid choice, game over")
